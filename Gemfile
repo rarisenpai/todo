@@ -70,3 +70,16 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem 'rspec-core'
+
+group :development, :test do
+  gem 'factory_bot_rails'
+end
+# Run against this stable release
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0.0'
+end
+
+group :test do
+  gem 'rails-controller-testing'
+end
